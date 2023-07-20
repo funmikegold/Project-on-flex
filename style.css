@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body {
+    background: #000;
+}
+
+.container{
+    padding: 4rem 4rem;
+    color: #fff;
+    
+  
+}
+.section{
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   padding: 2rem 0;
+}
+.box1{
+    width: 40%;
+    line-height: 1.6;
+    padding: 5rem 0rem;
+    max-width: 1000px;
+}
+
+.box2 {
+    width: 40%;
+}
+
+.box2 img {
+    width: 100%;
+}
+p{
+    font-size: 1.2rem;
+    width: 75%;
+    padding: 2rem 0;
+}
+h3{
+    text-align: right;
+    color: orange;
+    padding: 0rem 8rem;
+    cursor: pointer;
+}
+h1{
+    padding: 2rem 0;
+    font-size: 2.8rem;
+}
+
+h6{
+    position: relative;
+    font-size: 1.5rem;
+    color: orange;
+    cursor: pointer;
+}
+h6::after{
+    content: '';
+    display: block;
+    width: 45%;
+    height: 1px;
+    position: absolute;
+    background: orange;
+    right: 0;
+    top: 50%;
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 100%;
+        /* font-size: 20px; */
+    }
+
+    .section{
+        display: flex;
+       justify-content: space-around;
+       /* align-items: center; */
+       width: 100%;
+       flex-direction: column-reverse;
+       /* font-size: 0.5rem; */
+    }
+
+    .box1 {
+        width: 100%;
+    }
+    p {
+        width: 100%;
+    }
+    h5{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h3 { 
+        display: none;
+    }
+    h6 {
+        font-size: 0.8rem;
+        min-width: 50%;
+    }
+
+    .box2 {
+        width: 100%;
+    }
+    
+}
